@@ -1,5 +1,5 @@
 body {
-  color: gray;
+  color: rgb(219, 130, 130);
 }
 
 .list-group-item {
@@ -10,7 +10,4 @@ body {
 p {
   cursor: pointer;
   margin: 0px;
-}
-hr {
-  background-color: white;
 }

@@ -67,29 +67,30 @@ export const InventarioApp = () => {
     };
     dispatch(action);
   };
-
   let getvto = JSON.parse(localStorage.getItem("productos"));
 
-  let [{ vto }] = getvto;
+  let [{ vto, desc }] = getvto;
 
-  if (vto >= VTO) {
+  if (vto >= getCurrentDate()) {
+    alert(desc + " esta vencido");
+  } else {
+    console.log("no hay nada");
   }
-
   return (
     <div className="container pt-1">
       <h1>Poductos por vencer</h1>
       <hr />
 
       <div className="row">
-        <div className="col-1  p-0 mt-1">
+        {/* <div className="col-1  p-0 mt-1">
           {productos.map((prod, index) => (
-            <li key={prod.id} className="list-group-item">
-              <p className="text-center">{index + 1}</p>
-            </li>
+              <li key={prod.id} className="list-group-item">
+                <p className="text-center">{index + 1}</p>
+              </li>
           ))}
-        </div>
+        </div> */}
 
-        <div className="col-7 p-0 mt-1">
+        <div className="col-8 p-0 mt-1">
           <div className="col-6">
             <ul className="list-group list-group-flush">
               {productos.map((prod) => (
