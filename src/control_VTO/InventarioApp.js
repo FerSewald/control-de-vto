@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect } from "react";
-import { Reducer } from "./Reducer";
+import { Reducer } from "./Reducer.js";
 import "./inventario.css";
 import { useForm } from "./hook/useForm";
 
@@ -55,7 +55,7 @@ export const InventarioApp = () => {
 
   return (
     <div className="container pt-1">
-      <h1>Inventario ({productos.length})</h1>
+      <h1>Poductos por vencer ({productos.length})</h1>
       <hr />
 
       <div className="row">
@@ -106,7 +106,7 @@ export const InventarioApp = () => {
               type="text"
               name="precio"
               className="form-control"
-              placeholder="Precui..."
+              placeholder="Fecha"
               autoComplete="off"
               value={precio}
               onChange={handleInputChange}
@@ -115,7 +115,7 @@ export const InventarioApp = () => {
               type="text"
               name="cantidad"
               className="form-control"
-              placeholder="Cantidad..."
+              placeholder="VTO"
               autoComplete="off"
               value={cantidad}
               onChange={handleInputChange}
