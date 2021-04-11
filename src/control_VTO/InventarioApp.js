@@ -73,7 +73,6 @@ export const InventarioApp = () => {
   let [{ vto }] = getvto;
 
   if (vto >= VTO) {
-    alert("vencio");
   }
 
   return (
