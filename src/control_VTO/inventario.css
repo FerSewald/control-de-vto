@@ -1,0 +1,16 @@
+body{
+    color: rgb(146, 145, 155);
+}
+
+.list-group-item{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    cursor: pointer;
+    margin:0px;
+}
+hr{
+    background-color: #01adef;
+}
